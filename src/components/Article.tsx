@@ -12,7 +12,7 @@ import React from 'react';
 import MobileWeb3Image from '../assets/images/image-web-3-mobile.jpg';
 import DesktopWeb3Image from '../assets/images/image-web-3-desktop.jpg';
 
-const Header: React.FC = (): JSX.Element => {
+const Article: React.FC = (): JSX.Element => {
   const theme: Theme = useTheme();
   return (
     <Box
@@ -106,4 +106,4 @@ const Header: React.FC = (): JSX.Element => {
   );
 };
 
-export default Header;
+export default Article;
