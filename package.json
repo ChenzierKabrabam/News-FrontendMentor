@@ -1,6 +1,6 @@
 {
-  "name": "news_homepage",
-  "version": "0.1.0",
+  "name": "news_loopStudio",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.4",
