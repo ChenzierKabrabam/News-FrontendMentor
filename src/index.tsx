@@ -13,10 +13,23 @@ import ReactDOM from 'react-dom/client';
 import App from './components/App';
 import { CssBaseline } from '@mui/material';
 
+import { ThemeProvider, createTheme } from '@mui/material/styles';
+
+/**
+ * creating a custom font
+ */
+const theme = createTheme({
+  typography: {
+    fontFamily: ['Inter', 'sans-serif'].join(','),
+  },
+});
+
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 root.render(
   <React.StrictMode>
-    <CssBaseline />
-    <App />
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+      <App />
+    </ThemeProvider>
   </React.StrictMode>
 );

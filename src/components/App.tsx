@@ -17,14 +17,18 @@ import { Theme, useTheme } from '@mui/material';
 import { footerData, newsData } from '../data/data';
 import List from './List';
 import News from './News';
-import Header from './Header';
+import Article from './Article';
 
 const App: React.FC = (): JSX.Element => {
   const theme: Theme = useTheme();
 
   return (
     <React.Fragment>
+      {/** appbar */}
       <Appbar />
+      {/**
+       * article wrapper
+       */}
       <Box
         sx={{
           width: '100%',
@@ -41,7 +45,7 @@ const App: React.FC = (): JSX.Element => {
           },
         }}
       >
-        {/** header */}
+        {/** article one */}
         <Box
           sx={{
             width: '100%',
@@ -51,7 +55,7 @@ const App: React.FC = (): JSX.Element => {
             alignItems: 'flex-start',
           }}
         >
-          <Header />
+          <Article />
           <Box
             sx={{
               width: { xs: '100%', md: '320px', lg: '330px' },
@@ -75,7 +79,7 @@ const App: React.FC = (): JSX.Element => {
           </Box>
         </Box>
 
-        {/** footer */}
+        {/** article two */}
         <Box
           sx={{
             width: '100%',
